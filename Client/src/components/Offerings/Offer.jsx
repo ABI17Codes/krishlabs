@@ -1,6 +1,7 @@
 import React from "react";
 import { Images } from "../../assets/Images";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Offers = [
   {
@@ -32,22 +33,22 @@ export const Offers = [
 const Offer = () => {
   return (
     <div className="mt-10">
-      <div className="grid md:grid-cols-2 grid-cols-1 lg:space-x-15 md:space-x-5 space-y-5">
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:space-x-10 md:space-x-5 space-y-5">
         {Offers.map((offer, index) => (
           <div key={index}>
-            <img
-              className="w-full rounded-xl"
-              src={offer.image}
-              alt="image"
-            />
+            <img className="w-full rounded-xl" src={offer.image} alt="image" />
             <p className="mt-2 lg:text-3xl sm:text-2xl text-xl text-black">
               {offer.name}
             </p>
             <p className="font-light md:text-xl text-lg mt-2">{offer.amount}</p>
-            <button className="text-[#377A00] mt-2 cursor-pointer flex font-medium">
-              LEARN MORE
-              <ArrowRight />
-            </button>
+            <div>
+              <Link to={"/contact"}>
+                <button className="text-[#377A00] mt-2 cursor-pointer flex font-medium">
+                  LEARN MORE
+                  <ArrowRight />
+                </button>
+              </Link>
+            </div>
           </div>
         ))}
       </div>

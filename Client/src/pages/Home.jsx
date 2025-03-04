@@ -42,10 +42,14 @@ const Home = () => {
                 of passionate developers seeking to create impactful solutions.
               </p>
             </div>
-            <button className="text-[#377A00] mt-5 cursor-pointer flex font-medium">
-              READ MORE
-              <ArrowRight />
-            </button>
+            <div>
+              <Link to={"/about"}>
+                <button className="text-[#377A00] mt-5 cursor-pointer flex font-medium">
+                  READ MORE
+                  <ArrowRight />
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -76,9 +80,11 @@ const Home = () => {
                 Ready to Start Your Project?
               </p>
               <div>
-                <button className="px-6 py-4 bg-[#377A00] hover:bg-[#2f6a00] text-white hover:transition-all hover:duration-500 hover:ease-in-out">
-                  <Link to={"/contact"}>GET STARTED</Link>
-                </button>
+                <Link to={"/contact"}>
+                  <button className="px-6 py-4 bg-[#377A00] hover:bg-[#2f6a00] cursor-pointer text-white hover:transition-all hover:duration-500 hover:ease-in-out">
+                    GET STARTED
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -242,7 +248,7 @@ const Home = () => {
         </div>
       </div>
 
-      <AchiveGoals/>
+      <AchiveGoals />
     </div>
   );
 };

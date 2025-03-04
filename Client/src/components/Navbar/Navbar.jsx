@@ -27,15 +27,14 @@ const Navbar = () => {
           <NavLink className="hover:text-white/60" to={"/contact"}>
             CONTACT
           </NavLink>
-          <button className="border-2 px-6 py-3 border-white hover:bg-white hover:text-black hover:transition-all hover:duration-500 hover:ease-in-out">
-            <Link to={"/contact"}>GET STARTED</Link>
-          </button>
+          <Link to={"/contact"}>
+            <button className="border-2 px-6 py-3 border-white cursor-pointer hover:bg-white hover:text-black hover:transition-all hover:duration-500 hover:ease-in-out">
+              GET STARTED
+            </button>
+          </Link>
         </div>
         <div className="md:hidden">
-          <button
-            className="w-6"
-            onClick={() => setShowMenu(!showMenu)}
-          >
+          <button className="w-6" onClick={() => setShowMenu(!showMenu)}>
             {showMenu ? <X /> : <AlignRight />}
           </button>
         </div>
@@ -78,11 +77,11 @@ const Navbar = () => {
             >
               CONTACT
             </NavLink>
-            <button className="border-2 px-6 py-3 border-white hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
-              <Link to="/contact" onClick={() => setShowMenu(false)}>
+            <Link to="/contact" onClick={() => setShowMenu(false)}>
+              <button className="border-2 px-6 py-3 border-white hover:bg-white hover:text-black transition-all duration-500 ease-in-out">
                 GET STARTED
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       )}

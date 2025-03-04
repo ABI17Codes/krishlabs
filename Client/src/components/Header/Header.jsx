@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <div
-        className="bg-cover bg-center w-full  text-white -mt-30"
+        className="bg-cover bg-center w-full text-white -mt-30"
         style={{ backgroundImage: `url(${Images.Image1})` }}
       >
         <div className="flex flex-col justify-center items-center h-[100vh] bg-[#022104]/70 space-y-5">
@@ -17,11 +17,15 @@ const Header = () => {
           <h1 className="lg:text-5xl text-4xl leading-15 text-center">
             Transforming Ideas into Innovative <br /> Solutions
           </h1>
-          <p className="md:text-xl text-lg text-center">Empowering your business with cutting-edge technology.</p>
+          <p className="md:text-xl text-lg text-center">
+            Empowering your business with cutting-edge technology.
+          </p>
           <div>
-            <button className="px-4 py-2 bg-[#377A00] hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-500 hover:ease-in-out">
-              <Link to={"/contact"}>GET STARTED</Link>
-            </button>
+            <Link to={"/contact"}>
+              <button className="px-5 py-3 bg-[#377A00] hover:bg-[#2f6a00] cursor-pointer hover:text-white hover:transition-all hover:duration-500 hover:ease-in-out">
+                GET STARTED
+              </button>
+            </Link>
           </div>
         </div>
       </div>
