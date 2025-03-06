@@ -42,9 +42,9 @@ const Home = () => {
                 of passionate developers seeking to create impactful solutions.
               </p>
             </div>
-            <div>
+            <div className="mt-5">
               <Link to={"/about"}>
-                <button className="text-[#377A00] mt-5 cursor-pointer flex font-medium">
+                <button className="text-[#377A00] cursor-pointer flex items-center font-medium">
                   READ MORE
                   <ArrowRight />
                 </button>

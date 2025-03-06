@@ -7,19 +7,38 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Layout from "./AppLayout/Layout";
 
+// Admin-related pages/components
+import ProtectedRoute from "./components/ProtectedRoute";
+import AdminLogin from "./components/AdminLogin";
+import AdminDashboard from "./components/AdminDashboard";
+
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/offering" element={<Offering />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      {/* Public  routes */}
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="offering" element={<Offering />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+
+      {/* Admin routes */}
+      <Route path="/admin">
+        {/* Admin route Login Page */}
+        <Route path="login" element={<AdminLogin />} />
+        {/* Protected route Admin Dashboard */}
+        <Route
+          path="dashboard"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
+      </Route>
+    </Routes>
   );
 };
 

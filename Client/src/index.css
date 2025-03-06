@@ -9,3 +9,8 @@
 .active{
   @apply text-white/60
 }
+
+::selection {
+  color: white;
+  background: #377A00;
+}

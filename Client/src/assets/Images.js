@@ -7,11 +7,6 @@ import Image6 from "./image6.png";
 import Image7 from "./image7.png";
 import Image8 from "./image8.png";
 
-import facebook from "./social/facebook.png";
-import instagram from "./social/instagram.png";
-import youtube from "./social/youtube.png";
-import linkedin from "./social/linkedin.png";
-import x from "./social/x.png";
 
 export const Images = {
   Image1,
@@ -24,10 +19,4 @@ export const Images = {
   Image8,
 };
 
-export const socialmedia = {
-  facebook,
-  instagram,
-  youtube,
-  linkedin,
-  x,
-};
+

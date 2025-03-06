@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <div
-        className="bg-cover bg-center w-full text-white -mt-30"
+        className="bg-cover bg-center bg-fixed w-full text-white -mt-30"
         style={{ backgroundImage: `url(${Images.Image1})` }}
       >
         <div className="flex flex-col justify-center items-center h-[100vh] bg-[#022104]/70 space-y-5">

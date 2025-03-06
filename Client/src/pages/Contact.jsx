@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Line from "../components/Line";
-import { Images, socialmedia } from "../assets/Images";
+import { Images } from "../assets/Images";
 import AchiveGoals from "../components/AchiveGoals";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div
-        className="bg-cover bg-center text-white -mt-20"
+        className="bg-cover bg-center bg-fixed text-white -mt-20"
         style={{ backgroundImage: `url(${Images.Image1})` }}
       >
         <div className="flex flex-col bg-[#022104]/70 justify-center items-center py-30 h-[50vh]">
@@ -89,27 +99,36 @@ const Contact = () => {
             <div>
               <p className="text-lg">Follow Us: </p>
               <div className="flex items-center space-x-4 my-3">
-                <img
-                  className="cursor-pointer"
-                  src={socialmedia.facebook}
-                  alt="facebook"
-                />
-                <img className="cursor-pointer" src={socialmedia.x} alt="x" />
-                <img
-                  className="cursor-pointer"
-                  src={socialmedia.instagram}
-                  alt="instagram"
-                />
-                <img
-                  className="cursor-pointer"
-                  src={socialmedia.linkedin}
-                  alt="linkedin"
-                />
-                <img
-                  className="cursor-pointer"
-                  src={socialmedia.youtube}
-                  alt="youtube"
-                />
+                <Link to={"#"}>
+                  <FaFacebook
+                    size={22}
+                    className="text-[#012104] hover:text-[#2f6a00]"
+                  />
+                </Link>
+                <Link to={"#"}>
+                  <FaSquareXTwitter
+                    size={22}
+                    className="text-[#012104] hover:text-[#2f6a00]"
+                  />
+                </Link>
+                <Link to={"#"}>
+                  <FaInstagram
+                    size={22}
+                    className="text-[#012104] hover:text-[#2f6a00]"
+                  />
+                </Link>
+                <Link to={"#"}>
+                  <FaYoutube
+                    size={22}
+                    className="text-[#012104] hover:text-[#2f6a00]"
+                  />
+                </Link>
+                <Link to={"#"}>
+                  <FaLinkedinIn
+                    size={22}
+                    className="text-[#012104] hover:text-[#2f6a00]"
+                  />
+                </Link>
               </div>
             </div>
           </div>
