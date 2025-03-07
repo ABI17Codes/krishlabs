@@ -116,6 +116,46 @@ const About = () => {
           {/* </div> */}
         </div>
         <div className="border border-[#377A00]/20 md:mt-15 mt-10"></div>
+        <div className="md:mt-20 mt-10">
+          <div className="flex justify-center">
+            <Line />
+          </div>
+          <div>
+            <p className="text-center md:my-15 my-10 lg:text-5xl md:text-4xl text-3xl text-black">
+              Why Choose Krishlabs?
+            </p>
+            <div className="sm:text-lg md:flex justify-center items-start space-y-5 space-x-4">
+              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
+                <span className="font-bold">✅ Expertise Across Domains</span> –
+                From startups to established enterprises, we provide tailored
+                solutions for diverse industries.
+              </p>
+              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
+                <span className="font-bold"> ✅ Client-Centric Approach</span> –
+                We prioritize our clients' needs, ensuring every solution aligns
+                with their business vision.
+              </p>
+              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
+                <span className="font-bold"> ✅ Innovation & Excellence</span> –
+                We stay ahead of technology trends to deliver high-quality,
+                scalable, and secure solutions.
+              </p>
+            </div>
+            <div className="md:flex md:items-center md:justify-evenly text-center space-y-5  mt-12">
+              <p className="lg:text-3xl md:text-2xl text-xl">
+                🚀 Let’s build the future together!
+              </p>
+              <div className="flex items-center justify-center">
+                <Link to={"/contact"}>
+                  <button className="p-4 cursor-pointer flex  items-center font-medium text-[#377A00] border-2 border-[#377A00] hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-500 hover:ease-in-out">
+                    📩 Contact Us Today
+                    <ArrowRight className="ml-2" />
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="grid lg:grid-cols-3 grid-cols-1 space-y-10 space-x-5 md:mt-20 mt-10">
           <div>
             <div className="flex justify-start">
@@ -177,46 +217,6 @@ const About = () => {
               src={Images.Image1}
               alt="Image3"
             />
-          </div>
-        </div>
-        <div className="md:mt-20 mt-10">
-          <div className="flex justify-center">
-            <Line />
-          </div>
-          <div>
-            <p className="text-center md:my-15 my-10 lg:text-5xl md:text-4xl text-3xl text-black">
-              Why Choose Krishlabs?
-            </p>
-            <div className="sm:text-lg md:flex justify-center items-start space-y-5 space-x-4">
-              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
-                <span className="font-bold">✅ Expertise Across Domains</span> –
-                From startups to established enterprises, we provide tailored
-                solutions for diverse industries.
-              </p>
-              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
-                <span className="font-bold"> ✅ Client-Centric Approach</span> –
-                We prioritize our clients' needs, ensuring every solution aligns
-                with their business vision.
-              </p>
-              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
-                <span className="font-bold"> ✅ Innovation & Excellence</span> –
-                We stay ahead of technology trends to deliver high-quality,
-                scalable, and secure solutions.
-              </p>
-            </div>
-            <div className="md:flex md:items-center md:justify-evenly text-center space-y-5  mt-12">
-              <p className="lg:text-3xl md:text-2xl text-xl">
-                🚀 Let’s build the future together!
-              </p>
-              <div className="flex items-center justify-center">
-                <Link to={"/contact"}>
-                  <button className="p-4 cursor-pointer flex  items-center font-medium text-[#377A00] border-2 border-[#377A00] hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-500 hover:ease-in-out">
-                    📩 Contact Us Today
-                    <ArrowRight className="ml-2" />
-                  </button>
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>

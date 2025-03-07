@@ -11,6 +11,7 @@ import Layout from "./AppLayout/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminLogin from "./components/AdminLogin";
 import AdminDashboard from "./components/AdminDashboard";
+import BlogDetails from "./pages/BlogDetails";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="offering" element={<Offering />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="blog/:id" element={<BlogDetails />} />
       </Route>
 
       {/* Admin routes */}
