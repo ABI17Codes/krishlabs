@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:my-20 my-10 text-black/70">
         <div>
-          <div className="flex lg:justify-center md:mt-20 ">
+          <div className="flex lg:justify-center md:mt-20">
             <Line color="#377A00" />
           </div>
           <div className="flex flex-col lg:items-center my-7">
@@ -36,7 +36,7 @@ const About = () => {
         </div>
         <div className="border border-[#377A00]/20 md:mt-15 mt-10"></div>
         <div>
-          <div className="flex lg:justify-center md:mt-20 ">
+          <div className="flex lg:justify-center md:mt-20 mt-10">
             <Line color="#377A00" />
           </div>
           <div className="flex flex-col lg:items-center my-7">
