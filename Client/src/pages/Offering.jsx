@@ -5,6 +5,7 @@ import { Images } from "../assets/Images";
 import AchiveGoals from "../components/AchiveGoals";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { MdInsights } from "react-icons/md";
 
 const Offering = () => {
   return (
@@ -19,7 +20,7 @@ const Offering = () => {
       </div>
       <div className="md:mt-20 mt-10">
         <div className="flex justify-center">
-          <Line />
+          <Line color="#377A00" />
         </div>
         <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:mt-15 mt-10 ">
           <p className="text-center md:my-15 my-10 lg:text-5xl md:text-4xl text-3xl text-black">
@@ -38,7 +39,7 @@ const Offering = () => {
       <div className="border border-[#377A00]/20 md:mt-15 mt-10"></div>
       <div className=" md:mt-20 mt-10">
         <div className="flex justify-center">
-          <Line />
+          <Line color="#377A00" />
         </div>
         <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:mt-20 mt-10">
           <p className="text-center md:my-15 my-10 lg:text-5xl md:text-4xl text-3xl text-black">
@@ -50,25 +51,32 @@ const Offering = () => {
       <div className="border border-[#377A00]/20 md:mt-15 mt-10"></div>
       <div className=" md:mt-20 mt-10">
         <div className="flex justify-center">
-          <Line />
+          <Line color="#377A00" />
         </div>
         <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:my-15 my-10 ">
           <p className="text-center md:my-15 my-10 lg:text-5xl md:text-4xl text-3xl text-black">
             Why Choose Krishlabs?
           </p>
           <div className="sm:text-lg md:flex justify-center items-start space-y-5 space-x-4">
-            <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
-              ✅ Expertise Across Industries – We serve startups, SMEs, and
-              enterprises.
-            </p>
-            <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
-              ✅ Innovative & Scalable Solutions – Future-proof technology for
-              long-term growth.
-            </p>
-            <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
-              ✅ Client-Centric Approach – We tailor our services to meet your
-              business goals.
-            </p>
+            <div>
+              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
+                ✅ Expertise Across Industries – We serve startups, SMEs, and
+                enterprises.
+              </p>
+            </div>
+            <div>
+              {/* <MdInsights /> */}
+              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
+                ✅ Innovative & Scalable Solutions – Future-proof technology for
+                long-term growth.
+              </p>
+            </div>
+            <div>
+              <p className="border-2 border-[#377A00] px-4 py-3 hover:bg-[#2f6a00] hover:text-white hover:transition-all hover:duration-700 hover:ease-in-out w-full">
+                ✅ Client-Centric Approach – We tailor our services to meet your
+                business goals.
+              </p>
+            </div>
           </div>
           <div className="sm:flex sm:items-center sm:justify-evenly text-center space-y-5  mt-12">
             <p className="lg:text-3xl md:text-2xl text-xl">

@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-center md:mt-25 mt-15">
-        <Line />
+      <Line color="#377A00" />
       </div>
       <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:my-20 my-10 text-black/70">
         <p className="text-center md:my-15 my-10 lg:text-5xl md:text-4xl text-3xl text-black">

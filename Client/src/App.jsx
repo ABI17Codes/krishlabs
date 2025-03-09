@@ -12,6 +12,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import AdminLogin from "./components/AdminLogin";
 import AdminDashboard from "./components/AdminDashboard";
 import BlogDetails from "./pages/BlogDetails";
+import Career from "./pages/Career";
 
 const App = () => {
   return (
@@ -20,10 +21,11 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="offering" element={<Offering />} />
+        <Route path="services" element={<Offering />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
         <Route path="blog/:id" element={<BlogDetails />} />
+        <Route path="/career" element={<Career />} />
       </Route>
 
       {/* Admin routes */}

@@ -17,14 +17,13 @@ const Home = () => {
           <div>
             <img
               className="w-full"
-              // -mt-8 mb-6 -ml-6 bg-[#2f6a00]/30 rounded-xl
               src={`${Images.Image2}`}
               alt="Image2"
             />
           </div>
           <div>
             <div className="flex justify-start">
-              <Line />
+            <Line color="#377A00" />
             </div>
             <p className="my-5 lg:text-4xl md:text-3xl text-2xl text-black">
               Our Journey and Vision
@@ -58,7 +57,7 @@ const Home = () => {
       <div className="bg-[#eaf7eb]">
         <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:mt-20 mt-10">
           <div className="flex justify-start md:pt-20 pt-10">
-            <Line />
+          <Line color="#377A00" />
           </div>
           <p className="mt-5 lg:text-4xl md:text-3xl text-2xl text-black">
             Our Core Offerings
@@ -94,7 +93,7 @@ const Home = () => {
       <div className="bg-[#011502] text-white">
         <div className="lg:mx-35 md:mx-25 sm:mx-10 mx-5 md:py-20 py-10">
           <div className="flex justify-center mt-10">
-            <Line />
+          <Line color="#377A00" />
           </div>
           <div className="flex flex-col items-center mt-7">
             <p className="mb-5 lg:text-4xl md:text-3xl sm:text-2xl text-xl text-center">
@@ -160,7 +159,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 grid-cols-1">
             <div>
               <div className="flex justify-start">
-                <Line />
+              <Line color="#377A00" />
               </div>
               <p className="my-5 lg:text-4xl md:text-3xl text-2xl text-black">
                 Our Development Process
@@ -209,7 +208,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 grid-cols-1 space-y-10">
             <div className="">
               <div className="flex justify-start">
-                <Line />
+              <Line color="#377A00" />
               </div>
               <p className="my-5 lg:text-4xl md:text-3xl text-2xl text-black">
                 What Clients Say

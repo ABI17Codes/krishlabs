@@ -12,7 +12,7 @@ const AchiveGoals = () => {
       >
         <div className="flex flex-col bg-[#022104]/60">
           <div className="flex justify-center md:mt-20 mt-10">
-            <Line />
+          <Line color="#377A00" />
           </div>
           <div className="text-center mt-4 mb-15">
             <p className="my-2 lg:text-4xl md:text-3xl text-2xl">

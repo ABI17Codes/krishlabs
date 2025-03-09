@@ -6,7 +6,7 @@ const BlogDetails = () => {
     <div>
       <div className="bg-[#011502] w-full h-28 -mt-20"></div>
       <div className="bg-[#eaf7eb] pt-5">
-        <div className="lg:mx-96 md:mx-50 sm:mx-40 mx-5 bg-white px-5 py-2">
+        <div className="lg:mx-96 md:mx-51 60 sm:mx-40 mx-5 bg-white px-5 py-2">
           <p className="md:text-xl text-lg font-bold mt-3">
             Crafting Captivating Headlines: Your awesome post title goes here
           </p>

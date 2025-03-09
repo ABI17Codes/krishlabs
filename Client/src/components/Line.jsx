@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Line = () => {
+const Line = ({color}) => {
   return (
-    <div className='border w-16 border-[#377A00]'></div>
+    <div className='border-2 w-24' style={{ borderColor: color }}></div>
   )
 }
 

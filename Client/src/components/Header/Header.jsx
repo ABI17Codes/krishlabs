@@ -12,7 +12,7 @@ const Header = () => {
       >
         <div className="flex flex-col justify-center items-center h-[100vh] bg-[#022104]/70 space-y-5">
           <div className="flex justify-center md:my-10 mt-20">
-            <Line />
+          <Line color="#377A00" />
           </div>
           <h1 className="lg:text-5xl text-4xl leading-15 text-center">
             Transforming Ideas into Innovative <br /> Solutions

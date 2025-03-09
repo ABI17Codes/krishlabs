@@ -25,12 +25,12 @@ const Footer = () => {
             <p className="md:text-2xl text-xl">COMPANY</p>
             <div className="flex flex-col justify-start items-start gap-3 mt-3">
               <Link>Blog</Link>
-              <Link>Careers</Link>
+              <Link to={'/career'}>Careers</Link>
               <Link>Pricing</Link>
             </div>
           </div>
           <div>
-            <p className="md:text-2xl text-xl">COMPANY</p>
+            <p className="md:text-2xl text-xl">LEGAL</p>
             <div className="flex flex-col justify-start items-start gap-3 mt-3">
               <Link>Terms of Service</Link>
               <Link>Privacy Policy</Link>
