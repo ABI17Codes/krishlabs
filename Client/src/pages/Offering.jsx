@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Offer from "../components/Offerings/Offer";
 import Line from "../components/Line";
 import { Images } from "../assets/Images";
 import AchiveGoals from "../components/AchiveGoals";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { MdInsights } from "react-icons/md";
 
 const Offering = () => {
+
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div>
       <div

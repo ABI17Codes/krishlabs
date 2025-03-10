@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header/Header";
 import { Images } from "../assets/Images";
 import Offer from "../components/Offerings/Offer";
@@ -8,6 +8,13 @@ import { Link } from "react-router-dom";
 import AchiveGoals from "../components/AchiveGoals";
 
 const Home = () => {
+
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div>
       <Header />

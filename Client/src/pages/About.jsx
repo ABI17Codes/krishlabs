@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AchiveGoals from "../components/AchiveGoals";
 import { Images } from "../assets/Images";
 import Line from "../components/Line";
@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const About = () => {
+
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div>
       <div
@@ -41,7 +47,7 @@ const About = () => {
           </div>
           <div className="flex flex-col lg:items-center my-7">
             <p className="mb-5 lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-black lg:text-center">
-              Celebrating 10 Years of Excellence
+              Celebrating 5 Years of Excellence
             </p>
             <p className="md:text-lg lg:w-2/3 lg:text-center">
               Krishlabs is a leading software development company dedicated to
@@ -52,7 +58,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-x-30 md:gap-x-10 space-y-5 md:text-lg mt-10 font-light">
           <div className="space-y-5">
             <p>
-              Founded in 2013, Krishlabs started with a vision to revolutionize
+              Founded in 2020, Krishlabs started with a vision to revolutionize
               software development by providing cutting-edge technology and
               exceptional service to businesses around the globe.
             </p>

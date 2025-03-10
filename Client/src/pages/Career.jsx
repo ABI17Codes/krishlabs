@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Images } from "../assets/Images";
 import { FaLightbulb } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
@@ -39,6 +39,11 @@ const whyCareerWithUs = [
 ];
 
 const Career = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div>
       <div
@@ -105,7 +110,7 @@ const Career = () => {
           </div>
           <div className="flex flex-wrap justify-center mt-10 gap-10">
             <div className="bg-white rounded-2xl overflow-hidden sm:w-96 w-full">
-              <div className="bg-linear-120 from-[#0066FF] to-[#002855] text-white px-4 py-5">
+              <div className="bg-[#377A00] text-white px-4 py-5">
                 <p className="text-2xl">📌 Software Developer (Web & Mobile)</p>
               </div>
               <div className="flex flex-col p-8 space-y-3 font-light">
@@ -125,14 +130,14 @@ const Career = () => {
               <div className="border border-[#EEEEEE]"></div>
               <div className="text-center my-5">
                 <Link to="mailto:hello@krishlabs.in">
-                  <button className="text-[#002855] bg-[#00CCFF] px-5 py-3 rounded-full font-bold cursor-pointer">
+                  <button className="text-white bg-[#2f6a00] px-5 py-3 rounded-full font-bold cursor-pointer">
                     Apply Now
                   </button>
                 </Link>
               </div>
             </div>
             <div className="bg-white rounded-2xl overflow-hidden sm:w-96 w-full">
-              <div className="bg-linear-120 from-[#0066FF] to-[#002855] text-white px-4 py-5">
+              <div className="bg-[#377A00] text-white px-4 py-5">
                 <p className="text-2xl">📌 UI/UX Designer </p>
               </div>
               <div className="flex flex-col p-8 space-y-3 font-light">
@@ -152,14 +157,14 @@ const Career = () => {
               <div className="border border-[#EEEEEE]"></div>
               <div className="text-center my-5">
                 <Link to="mailto:hello@krishlabs.in">
-                  <button className="text-[#002855] bg-[#00CCFF] px-5 py-3 rounded-full font-bold cursor-pointer">
+                  <button className="text-white bg-[#2f6a00] px-5 py-3 rounded-full font-bold cursor-pointer">
                     Apply Now
                   </button>
                 </Link>
               </div>
             </div>
             <div className="bg-white rounded-2xl overflow-hidden sm:w-96 w-full">
-              <div className="bg-linear-120 from-[#0066FF] to-[#002855] text-white px-4 py-5">
+              <div className="bg-[#377A00] text-white px-4 py-5">
                 <p className="text-2xl">📌 Digital Marketing Specialist</p>
               </div>
               <div className="flex flex-col p-8 space-y-3 font-light">
@@ -179,14 +184,14 @@ const Career = () => {
               <div className="border border-[#EEEEEE]"></div>
               <div className="text-center my-5">
                 <Link to="mailto:hello@krishlabs.in">
-                  <button className="text-[#002855] bg-[#00CCFF] px-5 py-3 rounded-full font-bold cursor-pointer">
+                  <button className="text-white bg-[#2f6a00] px-5 py-3 rounded-full font-bold cursor-pointer">
                     Apply Now
                   </button>
                 </Link>
               </div>
             </div>
             <div className="bg-white rounded-2xl overflow-hidden sm:w-96 w-full">
-              <div className="bg-linear-120 from-[#0066FF] to-[#002855] text-white px-4 py-5">
+              <div className="bg-[#377A00] text-white px-4 py-5">
                 <p className="text-2xl">📌 Graphic Designer</p>
               </div>
               <div className="flex flex-col p-8 space-y-3 font-light">
@@ -206,7 +211,7 @@ const Career = () => {
               <div className="border border-[#EEEEEE]"></div>
               <div className="text-center my-5">
                 <Link to="mailto:hello@krishlabs.in">
-                  <button className="text-[#002855] bg-[#00CCFF] px-5 py-3 rounded-full font-bold cursor-pointer">
+                  <button className="text-white bg-[#2f6a00] px-5 py-3 rounded-full font-bold cursor-pointer">
                     Apply Now
                   </button>
                 </Link>
@@ -230,21 +235,21 @@ const Career = () => {
           internships in:
         </p>
         <div className="flex flex-wrap justify-center gap-5">
-          <p className="bg-[#002855] text-white px-5 py-3 rounded-full">
+          <p className="bg-[#377A00] text-white px-5 py-3 rounded-full">
             🎯 Software Development
           </p>
-          <p className="bg-[#002855] text-white px-5 py-3 rounded-full">
+          <p className="bg-[#377A00] text-white px-5 py-3 rounded-full">
             🎯 UI/UX Design
           </p>
-          <p className="bg-[#002855] text-white px-5 py-3 rounded-full">
+          <p className="bg-[#377A00] text-white px-5 py-3 rounded-full">
             🎯 Digital Marketing
           </p>
-          <p className="bg-[#002855] text-white px-5 py-3 rounded-full">
+          <p className="bg-[#377A00] text-white px-5 py-3 rounded-full">
             🎯 Business Development
           </p>
         </div>
       </div>
-      <div className="bg-linear-120 from-[#0066FF] to-[#002855] text-white">
+      <div className="bg-[#2f6a00] text-white">
         <div className="lg:px-35 md:px-25 sm:px-10 px-5 md:py-20 py-10 text-center space-y-10">
           <p className="lg:text-5xl md:text-4xl text-3xl font-bold">
             🚀 Join Us Today!
@@ -256,7 +261,7 @@ const Career = () => {
             </span>
             and shape the future with us.
           </p>
-          <button className="bg-[#00CCFF] text-[#001233] px-5 py-3 rounded-full cursor-pointer font-bold">
+          <button className="border-2 border-white text-white px-5 py-3 rounded-full cursor-pointer font-bold">
             <Link to="mailto:hello@krishlabs.in">Apply Now</Link>
           </button>
           <p className="md:text-lg font-light">

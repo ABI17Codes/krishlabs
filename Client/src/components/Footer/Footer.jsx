@@ -24,9 +24,10 @@ const Footer = () => {
           <div>
             <p className="md:text-2xl text-xl">COMPANY</p>
             <div className="flex flex-col justify-start items-start gap-3 mt-3">
-              <Link>Blog</Link>
+              <Link to={"/"}>Home</Link>
+              <Link to={"/about"}>About</Link>
               <Link to={'/career'}>Careers</Link>
-              <Link>Pricing</Link>
+              <Link to={"/contact"}>Contact</Link>
             </div>
           </div>
           <div>
